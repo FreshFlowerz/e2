@@ -17,6 +17,4 @@ $quarters = 34;
 # Add up how much money is in the piggy bank
 $total = ($pennies * $penny_value) + ($nickels * $nickel_value) + ($dimes * $dime_value) + ($quarters * $quarter_value);
 
-$results =  "<p> You have $total in your piggy bank</p>";
-
 require 'bank-view.php';
