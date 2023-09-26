@@ -18,7 +18,7 @@
     <h1>Project 1</h1>
 
     <h2>Game Mechanics</h2>
-    <ul>
+    <ul>0
         <li>...</li>
     </ul>
 
