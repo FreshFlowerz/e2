@@ -1,36 +1,25 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html lang='en'>
+<?php
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Project 1</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-</head>
+$coin = ['heads','tails'];
 
-<body>
-    <h1>Project 1</h1>
+// Flip the coin for player A
+$playerA = $coin[rand(0, 1)];
 
-    <h2>Game Mechanics</h2>
-    <ul>0
-        <li>...</li>
-    </ul>
+// For Player B default to whatever is left
+if ($playerA == 'heads') {
+    $playerB = 'tails';
+} else {
+    $playerB = 'heads';
+}
 
-    <h2>Results</h2>
-    <ul>
-        <li>...</li>
-    </ul>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+// Flip to pick the winning side
+$flip = $coin[rand(0,1)];
 
-    <script src="" async defer></script>
-</body>
+// Decide the winner 
+if ($playerA == $flip) {
+    $winner = 'Player A';
+ } else {
+    $winner = 'Player B';
+ }
 
-</html>
+require 'index-view.php';
