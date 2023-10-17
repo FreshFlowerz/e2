@@ -15,6 +15,7 @@
         <li>Player A and Player B randomly “throw” either Rock, Paper or Scissors.
         <li>A tie is declared if both players throw the same move.
         <li>Otherwise: Rock beats Scissors, Scissors beats Paper, Paper beats Rock.</li>
+        <li>In real life the winner would put the winning action on top of the losing player</li>
     </ul>
 
     <h2>Results</h2>
