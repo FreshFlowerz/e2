@@ -6,12 +6,14 @@ $total = 0;
 for ($i = 0; $i <25; $i++) {
     // var_dump($i);
 
+    // Player pick a random move
     $playerMoveA = $moves[rand(0,2)];
     $playerMoveB = $moves[rand(0,2)];
 
     // var_dump($playerMoveA);
     // var_dump($playerMoveB);
 
+    // Choose Winner
     if ($playerMoveA == $playerMoveB) {
         $winner = 'Tie';
         // var_dump('Tie');
@@ -34,14 +36,12 @@ for ($i = 0; $i <25; $i++) {
         $winner = 'Player B';
         // var_dump('Player B wins');
     }
-
+ 
+    //Display Results
     $results[] = [
         'playerA' => $playerMoveA,
         'playerB' => $playerMoveB,
         'winner' => $winner
-    ];
-    $toalwins [] = [
-        'wins' => $winner
     ];
 }
 
