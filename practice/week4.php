@@ -474,3 +474,16 @@ $cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 shuffle($cards);
 
 $dealTo = 'player';
+
+
+$cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,26];
+shuffle($cards);
+$playerCards1 = array_splice($cards, 0, count($cards) / 2);
+$PlayerCards2 = $cards;
+// We did not distribute back an forth, should be a for loop to distrubute to a card to each player until the deck is empty
+var_dump($playerCards1);
+
+$playerDraw1 = array_pop($playerCards1);
+
+var_dump($playerCards1);
+var_dump($playerDraw1);
